@@ -1,0 +1,45 @@
+﻿<Window x:Class="MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MainWindow" Height="350" Width="525"
+    xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"    
+        >
+    <Window.Resources>
+        <DataTemplate x:Key="myItemDescriptionTemplate">
+            <TextBlock Text="{Binding}" Foreground="Gray"></TextBlock>
+        </DataTemplate>
+
+    </Window.Resources>
+    <Grid>
+        <dxb:GalleryControl>
+            <dxb:GalleryControl.Gallery>
+                <dxb:Gallery ColCount="2" 
+                     ItemCheckMode="None" 
+                     IsGroupCaptionVisible="True"
+                     IsItemCaptionVisible="True"
+                     IsItemDescriptionVisible="True" 
+                     ItemClick="Gallery_ItemClick"
+                     FilterCaption="(click to filter groups)"
+                     ItemDescriptionTemplate="{StaticResource ResourceKey=myItemDescriptionTemplate}"
+                     ItemContentHorizontalAlignment="Left"
+                >
+                    <dxb:Gallery.Groups>
+                        <dxb:GalleryItemGroup Name="myGalleryGroup1" Caption="Misc Group">
+                            <dxb:GalleryItemGroup.Items>
+                                <dxb:GalleryItem Caption="Schedule" Description="Show schedule" Glyph="pack://application:,,,/Images/address-16x16.png"/>
+                                <dxb:GalleryItem Caption="Roles" Description="Assign roles" Glyph="pack://application:,,,/Images/role-16x16.png"/>
+                            </dxb:GalleryItemGroup.Items>
+                        </dxb:GalleryItemGroup>
+                        <dxb:GalleryItemGroup Name="myGalleryGroup2" Caption="Persons">
+                            <dxb:GalleryItemGroup.Items>
+                                <dxb:GalleryItem Caption="Employees" Glyph="pack://application:,,,/Images/employee-16x16.png"/>
+                                <dxb:GalleryItem Caption="Persons" Glyph="pack://application:,,,/Images/person-16x16.png"/>
+                                <dxb:GalleryItem Caption="Users" Glyph="pack://application:,,,/Images/user-16x16.png"/>
+                            </dxb:GalleryItemGroup.Items>
+                        </dxb:GalleryItemGroup>
+                    </dxb:Gallery.Groups>
+                </dxb:Gallery>
+            </dxb:GalleryControl.Gallery>
+        </dxb:GalleryControl>
+    </Grid>
+</Window>
