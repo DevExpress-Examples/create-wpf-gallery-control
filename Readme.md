@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* **[MainWindow.xaml](./CS/GalleryControl_Ex/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/GalleryControl_Ex/MainWindow.xaml))**
+* [MainWindow.xaml.cs](./CS/GalleryControl_Ex/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/GalleryControl_Ex/MainWindow.xaml))
+<!-- default file list end -->
 # How to create a GalleryControl
 
 
