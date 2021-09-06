@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalleryControl_Ex", "GalleryControl_Ex\GalleryControl_Ex.csproj", "{52996F9D-2854-4050-B7BE-4F8BDB3C8531}"
+# Visual Studio 16
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalleryControl_Ex", "GalleryControl_Ex\GalleryControl_Ex.Net5.csproj", "{52996F9D-2854-4050-B7BE-4F8BDB3C8531}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
